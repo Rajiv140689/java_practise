@@ -1,0 +1,12 @@
+package PractiseCode.Java.dynamicprogramming;
+
+/*
+1. You are given a number n, representing the number of stairs in a staircase.
+2. You are on the 0th step and required to climb to the top
+3. You are given n numbers, where ith element's value represents - till how far the step you could jump in a single move. you can of-course fewer number of step in the move.
+4. You are required to print the number of minimum moves which you can reach the top of staircase
+
+Note -> If there is no path through the staircase print null
+*/
+public class ClimbingStairsWithMinimumMoves {
+}
