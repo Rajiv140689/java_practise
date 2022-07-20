@@ -23,8 +23,6 @@ b
 2src/PractiseCode/Java/UniqueCharacterInString.java,2/4/24949dba1e19cb09f6dd0ec12b176dabaca39653
 l
 <src/PractiseCode/Java/GreaterThanPreviousAndNextElement.java,2/a/2a6665a2e12f9b8723aa659cb4bc8bd62d4c4b9c
-w
-Gsrc/PractiseCode/Java/BuyAndSellStock/CaptureAllProfitInfiniteTime.java,9/3/93c74d4b520aafb78d518f9a68fcade3b8b1bfc5
 Y
 )src/PractiseCode/Java/FibnocciSeries.java,6/c/6c3702c72c6db9348fad6296c38179bcfcb31b31
 T
