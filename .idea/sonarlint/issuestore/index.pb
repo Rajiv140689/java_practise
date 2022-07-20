@@ -29,7 +29,5 @@ Y
 )src/PractiseCode/Java/FibnocciSeries.java,6/c/6c3702c72c6db9348fad6296c38179bcfcb31b31
 T
 $src/PractiseCode/Java/Factorial.java,2/c/2c372b0878b570d422d62f34e866947978dfafcb
-m
-=src/PractiseCode/Java/dynamicprogramming/MinimumCostPath.java,5/a/5a8747ad04bd4876e16132616a9c7c08ca955ee1
 s
 Csrc/PractiseCode/Java/Queue/PollutedStateCityListPriorityQueue.java,2/8/28024626059d265252d6e52ab40c0c3340fa099c

@@ -8,6 +8,10 @@ You are on the highest step and required to climb down to the bottom
 In one move, you are allowed to climb max 3 stairs
 You are required to print the number of different paths via which yoy can climb to the top
 0<=n<=20
+
+Note:
+Total paths to reach Stair 6 from Stair 6 is 1
+Moves to reach Stair 6 from Stair 6 is 1
 */
 public class ClimbingDownStairs {
     public static void main(String[] args) {

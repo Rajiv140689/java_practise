@@ -13,7 +13,11 @@ Example: 5 stairs
 array contains max jump from a particular stairs = 2, 3, 0, 1, 2, 3 it means from 0th stair you can jump to max two
 stairs, from 1st stair you can jump to 3 stairs....
 
-5 stairs then DP will be n + 1 = 5 + 1-> 0 1 2 3 4 5 6
+5 stairs then DP will be n + 1 = 5 + 1 -> 0 1 2 3 4 5 6
+
+Note:
+Total paths to reach Stair 6 from Stair 6 is 1
+Moves to reach Stair 6 from Stair 6 is 1
 */
 public class ClimbingStairsWithJump {
     public static void main(String[] args) {
