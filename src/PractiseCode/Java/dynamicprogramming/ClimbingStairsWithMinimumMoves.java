@@ -18,7 +18,7 @@ Sample Input:
     10 stairs
 Max moves from each stair = 1 1 1 4 9 8 1 1 10 1
 output: 5
-Approach: We will store the minimum moves in the DP
+Approach: We will store the minimum moves in the DP in cell of the array
 */
 public class ClimbingStairsWithMinimumMoves {
     public static void main(String[] args) {
