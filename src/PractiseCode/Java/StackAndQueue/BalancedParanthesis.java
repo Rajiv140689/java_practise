@@ -28,7 +28,7 @@ public class BalancedParanthesis {
         Stack<String> storeOpeningParenthesis = new Stack<String>();
         for(int i = 0; i < inputString.length(); i++) {
             if (inputString.charAt(i) == '(') {
-                storeOpeningParenthesis.add("(");
+                storeOpeningParenthesis.add("(");//add() adds the element in the last
             } else {
                 if (!storeOpeningParenthesis.isEmpty()) {
                     storeOpeningParenthesis.pop();

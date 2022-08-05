@@ -13,19 +13,52 @@ package PractiseCode.Java.BuyAndSellStock;
 //    Buy at 10, sell at 22,
 //    Buy at 5 and sell at 80
 
+//Find the point where we can get the max sell profit
+//left to right
+
+//Find the point where we can get the max Buy profit
+//Right to left
+
 import java.util.Scanner;
 
 public class MaxProfit2Trans {
     public static void main(String[] args) {
-        System.out.println("Enter no of days: ");
+        System.out.print("Enter no of days: ");
         Scanner inputDaysSC = new Scanner(System.in);
         int daysCount = Integer.parseInt(inputDaysSC.nextLine());
 
         int[] priceArr = new int[daysCount];
         for(int i = 0; i < daysCount; i++){
-            System.out.println("Enter price for the day: ");
+            System.out.print("Enter price for the day: ");
             priceArr[i] = Integer.parseInt(inputDaysSC.nextLine());
         }
+
+        //Find the point where we can get the max sell profit
+        int lowestBuy = priceArr[0];
+        int[] maxSellProfitArr = new int[priceArr.length];
+        int todaySellProfit = 0;
+        for(int i = 1; i < priceArr.length; i++){
+            if(priceArr[i] < lowestBuy) {
+                lowestBuy = priceArr[i];
+            }
+
+            todaySellProfit = priceArr[i] - lowestBuy;
+
+            if(todaySellProfit > maxSellProfitArr[i-1]){
+                maxSellProfitArr[i] = todaySellProfit;
+            }
+            else {
+                maxSellProfitArr[i] = maxSellProfitArr[i - 1];
+            }
+        }
+
+        System.out.print("maxSellProfitArr: ");
+        int k = 0;
+        while(k < maxSellProfitArr.length){
+            System.out.print(maxSellProfitArr[k] + ", ");
+            k++;
+        }
+
 
         //Find the point where we can get the max Buy profit
         int highestSell = priceArr[priceArr.length - 1];
@@ -54,32 +87,6 @@ public class MaxProfit2Trans {
         }
 
 
-        //Find the point where we can get the max sell profit
-        int lowestBuy = priceArr[0];
-        int[] maxSellProfitArr = new int[priceArr.length];
-        int todaySellProfit = 0;
-        for(int i = 1; i < priceArr.length; i++){
-            if(priceArr[i] < lowestBuy) {
-                lowestBuy = priceArr[i];
-            }
-
-            todaySellProfit = priceArr[i] - lowestBuy;
-
-            if(todaySellProfit > maxSellProfitArr[i-1]){
-                maxSellProfitArr[i] = todaySellProfit;
-            }
-            else {
-                maxSellProfitArr[i] = maxSellProfitArr[i - 1];
-            }
-        }
-
-        System.out.print("maxSellProfitArr: ");
-        int k = 0;
-        while(k < maxBuyProfitArr.length){
-            System.out.print(maxSellProfitArr[k] + ", ");
-            k++;
-        }
-
         System.out.print("maxProfit: ");
         int maxProfit = 0;
         for(int i = 0; i < priceArr.length; i++){
@@ -87,7 +94,7 @@ public class MaxProfit2Trans {
                 maxProfit = maxSellProfitArr[i] + maxBuyProfitArr[i];
         }
         System.out.println("maxProfit: "+maxProfit);
-
+//
     }
 }
 
