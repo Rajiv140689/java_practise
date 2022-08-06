@@ -42,10 +42,16 @@ public class ClimbingStairsWithMinimumMoves {
         for(int j = stairCount - 1; j >= 0; j--){
             int min = Integer.MAX_VALUE;
             for(int k = 1; k <= maxMoveForEachStairArr[j] && (j + k) < dp.length; k++){
-                min = Math.min(min, dp[j + k]);
+                if(dp[j + k] != null) {
+                    min = Math.min(min, dp[j + k]);
+                }
             }
+            //below if check whether min is updated before or not, if updated then store else null be stored i.e
+            // default value of Integer[] array is null
+            //default value of int[] array is 0
             if(min != Integer.MAX_VALUE){
                 dp[j] = min + 1;
+                // we do +1 because we need one step to move to anywhere
             }
         }
 //        Arrays.stream(dp).forEach(System.out::println);
