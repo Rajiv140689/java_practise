@@ -10,7 +10,7 @@ public class UnderstandStackMethods {
         Stack<Integer> stack1 = new Stack();
         Stack stack2 = new Stack();
 
-        //add() and push() method is adds the data at stack top
+        //add() and push() method is same it adds the data at stack's top
         //only difference is add return true and push return the object which you are pushing
 
         stack1.add(1);
@@ -18,23 +18,24 @@ public class UnderstandStackMethods {
         stack1.add(3);
         stack1.add(4);
 
+        System.out.println(stack1);
         System.out.println("stack1.peek(): " + stack1.peek());
         System.out.println("stack1.pop(): " + stack1.pop());
+        System.out.println(stack1);
 
+        System.out.println("====================================");
 
         stack2.push(1);
         stack2.push(2);
         stack2.push(3);
         stack2.push(4);
 
+        System.out.println(stack2);
         System.out.println("stack2.peek(): " + stack2.peek());
         System.out.println("stack2.pop(): " + stack2.pop());
-
-        // Printing the Stack Elements
-        System.out.println(stack1);
         System.out.println(stack2);
 
-
+        System.out.println("====================================");
 
         // 1. Using an iterator to iterate through a stack
         Iterator<Integer> itr = stack1.iterator();
