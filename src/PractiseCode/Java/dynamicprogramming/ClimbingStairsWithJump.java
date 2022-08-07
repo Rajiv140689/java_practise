@@ -1,5 +1,6 @@
 package PractiseCode.Java.dynamicprogramming;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /*
@@ -18,6 +19,10 @@ stairs, from 1st stair you can jump to 3 stairs....
 Note:
 Total paths to reach Stair 6 from Stair 6 is 1
 Moves to reach Stair 6 from Stair 6 is 1
+Input:
+    StairCount = 6
+    JumpStepArr = 3 3 0 2 2 3
+output: 8
 */
 public class ClimbingStairsWithJump {
     public static void main(String[] args) {
@@ -29,14 +34,15 @@ public class ClimbingStairsWithJump {
         for(int i = 0; i < stairCount; i++){
             stairJumpValueArr[i] = sc.nextInt();
         }
-        System.out.println("stairJumpValueArr: " + stairJumpValueArr);
+        System.out.println("stairJumpValueArr: " + Arrays.toString(stairJumpValueArr));
 
         //stairCount = 5 -> 0, 1, 2, 3, 4 but we need 5 also so stairCount + 1
         int[] dp = new int[stairCount + 1];
 
         dp[stairCount] = 1;
-        for(int i = stairCount - 1; i >= 0; i--){
-            for(int j = 1; j < stairJumpValueArr[i] && (i + j) < dp.length; j++){
+        //dp.length - 2 because we have already assigned value to dp.length - 1
+        for(int i = dp.length - 2; i >= 0; i--){
+            for(int j = 1; j <= stairJumpValueArr[i] && (i + j) < dp.length; j++){
                 dp[i] += dp[i + j];
             }
         }

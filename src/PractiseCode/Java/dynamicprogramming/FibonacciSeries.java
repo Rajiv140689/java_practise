@@ -12,6 +12,8 @@ public class FibonacciSeries {
         Scanner sc = new Scanner(System.in);
         int inputNumber = sc.nextInt();
 
+        //We need array size as n+1 because we need to store all the value of n
+        //to store n=5 we need n+1 size i.e 6 which means 0to5
         Integer fibNumber =  printFibonacciSeries(inputNumber, new int[inputNumber + 1]);
         System.out.println("fibNumber: "+ fibNumber);
     }

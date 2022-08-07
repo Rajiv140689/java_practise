@@ -13,7 +13,7 @@ Note -> If there is no path through the staircase print null
 
 Note:
 Total paths to reach Stair 6 from Stair 6 is 1
-Moves to reach Stair 6 from Stair 6 is 1
+Moves to reach Stair 6 from Stair 6 is 0
 Sample Input:
     10 stairs
 Max moves from each stair = 1 1 1 4 9 8 1 1 10 1
@@ -40,17 +40,17 @@ public class ClimbingStairsWithMinimumMoves {
         dp[stairCount] = 0;
 
         for(int j = stairCount - 1; j >= 0; j--){
-            int min = Integer.MAX_VALUE;
+            int minMoves = Integer.MAX_VALUE;
             for(int k = 1; k <= maxMoveForEachStairArr[j] && (j + k) < dp.length; k++){
                 if(dp[j + k] != null) {
-                    min = Math.min(min, dp[j + k]);
+                    minMoves = Math.min(minMoves, dp[j + k]);
                 }
             }
             //below if check whether min is updated before or not, if updated then store else null be stored i.e
             // default value of Integer[] array is null
             //default value of int[] array is 0
-            if(min != Integer.MAX_VALUE){
-                dp[j] = min + 1;
+            if(minMoves != Integer.MAX_VALUE){
+                dp[j] = minMoves + 1;
                 // we do +1 because we need one step to move to anywhere
             }
         }
