@@ -6,6 +6,7 @@ public class MaxProfit1Trans {
     // inputDays: 6
     // price: 10, 15, 25, 8, 30, 35
     // MaxProfit: HighestPrice - lowestPrice
+    // Output: 27
 
     public static void main(String[] args) {
         System.out.println("Enter number of days: ");

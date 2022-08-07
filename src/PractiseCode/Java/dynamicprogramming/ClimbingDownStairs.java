@@ -11,7 +11,12 @@ You are required to print the number of different paths via which yoy can climb 
 
 Note:
 Total paths to reach Stair 6 from Stair 6 is 1
-Moves to reach Stair 6 from Stair 6 is 1
+Moves to reach Stair 6 from Stair 6 is 0
+
+Input:
+    StairCount = 6
+    Total moves = 3
+Output: 24
 */
 public class ClimbingDownStairs {
     public static void main(String[] args) {
