@@ -7,6 +7,7 @@ public class LongestSubstring {
     public static void main(String[] args){
 //        String s = "pwwekwb";
         String s = "dvdf";
+//        String s = "abcd";
         int n = s.length(), longestSubstringLength = 0;
         Map<Character, Integer> charPositionMap = new HashMap<>(); // current index of character
         // try to extend the range [i, j]

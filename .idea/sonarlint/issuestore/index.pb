@@ -15,8 +15,6 @@ o
 0src/PractiseCode/Java/string/SwapCharString.java,7/5/755317077950f3a5c8c37f2be145613639cc8bfe
 a
 1src/PractiseCode/Java/CountCharacterOfString.java,9/9/998ad23a8c975f06c961f489d00b9fb6029808ff
-b
-2src/PractiseCode/Java/string/LongestSubstring.java,d/c/dcc37e10e91b1f034237426cfa7df453bde8895a
 a
 1src/PractiseCode/Java/ContainerWithMostWater.java,b/3/b37c4a4769c7afbb53ff2ba48617c976d2d36e86
 Y
