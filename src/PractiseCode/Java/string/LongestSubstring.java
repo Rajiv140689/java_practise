@@ -6,9 +6,9 @@ import java.util.Map;
 public class LongestSubstring {
     public static void main(String[] args){
 
-        //String s = "pwwekwb";
+//        String s = "pwwekwbcd";
         String s = "dvdf";
-        //String s = "abcd";
+//        String s = "abcd";
 
         int n = s.length(), longestSubstringLength = 0;
 
@@ -22,7 +22,7 @@ public class LongestSubstring {
                 startCharLocation = Math.max(charPositionMap.get(s.charAt(currentCharLocation)), startCharLocation);
             }
 
-            longestSubstringLength = Math.max(longestSubstringLength, currentCharLocation - startCharLocation + 1);
+            longestSubstringLength = Math.max(longestSubstringLength, (currentCharLocation + 1) - startCharLocation);
 
             charPositionMap.put(s.charAt(currentCharLocation), currentCharLocation + 1);
         }
