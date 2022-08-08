@@ -3,7 +3,7 @@ package PractiseCode.Java.string;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LongestSubstring {
+public class LongestSubstringLen {
     public static void main(String[] args){
 
 //        String s = "pwwekwbcd";
