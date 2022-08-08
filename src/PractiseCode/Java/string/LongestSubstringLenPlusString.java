@@ -3,7 +3,7 @@ package PractiseCode.Java.string;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LongestSubstringLen {
+public class LongestSubstringLenPlusString {
     public static void main(String[] args){
 
 //        String s = "pwwekwbcd";
@@ -11,6 +11,7 @@ public class LongestSubstringLen {
 //        String s = "abcd";
 
         int n = s.length(), longestSubstringLength = 0;
+        int startIndex = 0, endIndex = 1, previousLongestSubstringLength = 0;
 
         Map<Character, Integer> charPositionMap = new HashMap<>(); // current index of character
         // try to extend the range [i, j]
@@ -23,10 +24,16 @@ public class LongestSubstringLen {
             }
 
             longestSubstringLength = Math.max(longestSubstringLength, (currentCharLocation + 1) - startCharLocation);
+            if(longestSubstringLength > previousLongestSubstringLength){
+                previousLongestSubstringLength = longestSubstringLength;
+                startIndex = startCharLocation;
+                endIndex = currentCharLocation + 1;
+            }
 
             charPositionMap.put(s.charAt(currentCharLocation), currentCharLocation + 1);
         }
         System.out.println("longestSubstring length: "+ longestSubstringLength);
+        System.out.println("longestSubstring string: "+ s.substring(startIndex, endIndex));
     }
 }
 
