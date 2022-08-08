@@ -1,16 +1,0 @@
-
-g	java:S101	"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(Œ“Óµùÿÿÿÿ
-t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(„Ðø’ýÿÿÿÿ
-l
-java:S1128"QRemove this unnecessary import: java.lang classes are always implicitly imported.(ãø©Æþÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(ÚøÝæ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ó¡³¯
-V	java:S125"<This block of commented-out lines of code should be removed.(ˆ’ß÷ÿÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(î±ØÁ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(Ó¡³¯
-Q	java:S125"<This block of commented-out lines of code should be removed.(³÷ó„
-N	java:S106#"9Replace this use of System.out or System.err by a logger.(‡®€ð
-N	java:S106%"9Replace this use of System.out or System.err by a logger.(Ó¡³¯
-@
-java:S1659."%Declare "address" on a separate line.(àÚ•´ùÿÿÿÿ
-V	java:S125o"<This block of commented-out lines of code should be removed.(÷éøƒüÿÿÿÿ

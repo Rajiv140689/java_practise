@@ -25,9 +25,9 @@ public class FirstNonRepeatedCharacter {
         // As LinkedHashMap maintains insertion order, first character with
         // count 1 should return first non repeated character
         for (Entry<Character, Integer> e : countCharacters.entrySet()) {
-            if (e.getValue() == 1)
+            if (e.getValue() == 1) {
                 return e.getKey();
-
+            }
         }
         return null;
 

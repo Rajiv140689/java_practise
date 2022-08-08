@@ -1,0 +1,30 @@
+
+J
+java:S3740
+"/Provide the parametrized type for this generic.(Ş¢¢œûÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(¶‹ıÿÿÿÿÿ
+J
+java:S3740"/Provide the parametrized type for this generic.(¶‹ıÿÿÿÿÿ
+r	java:S117:"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áÑ¢Üşÿÿÿÿ8Šü¼ê¦0
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(øá¤·ûÿÿÿÿ
+k
+java:S1149
+"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(Ş¢¢œûÿÿÿÿ
+k
+java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(¶‹ıÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ûã•²ùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(Â××Ÿùÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(›şôÚûÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ûã•²ùÿÿÿÿ
+U	java:S106"9Replace this use of System.out or System.err by a logger.(—äÒ8 ‡Óé¦0
+Z	java:S106!"9Replace this use of System.out or System.err by a logger.(²õ˜øÿÿÿÿ8›ü¼ê¦0
+Z	java:S106""9Replace this use of System.out or System.err by a logger.(ùÑ…æúÿÿÿÿ8•ù½ê¦0
+U	java:S106#"9Replace this use of System.out or System.err by a logger.(Œ¾Î¹8šÑ¢î¦0
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(²õ˜øÿÿÿÿ8Ñ¢î¦0
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(—äÒ8ó£î¦0
+Z	java:S106/"9Replace this use of System.out or System.err by a logger.(ˆ¢Ûßüÿÿÿÿ8£Ö£î¦0
+U	java:S1065"9Replace this use of System.out or System.err by a logger.(Òà´Ç8İ—¤î¦0
+b
+java:S1612:"@Replace this lambda with method reference 'System.out::println'.(áÑ¢Üşÿÿÿÿ8ò½ê¦0
+Z	java:S106:"9Replace this use of System.out or System.err by a logger.(áÑ¢Üşÿÿÿÿ8Ş—¤î¦0
