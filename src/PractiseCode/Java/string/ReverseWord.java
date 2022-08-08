@@ -25,7 +25,7 @@ package PractiseCode.Java.string;
 //}
 
 
-class Solution {
+class ReverseWord {
     public static boolean buddyStrings(String s, String goal) {
         String sRev="";
         for (int i = s.length()-1; i >= 0; i--) {
