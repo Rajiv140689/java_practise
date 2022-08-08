@@ -1,4 +1,4 @@
-package PractiseCode.Java;
+package PractiseCode.Java.string;
 
 import java.util.*;
 import java.util.Map.Entry;

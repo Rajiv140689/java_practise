@@ -1,4 +1,4 @@
-package PractiseCode.Java;
+package PractiseCode.Java.string;
 
 import java.util.Hashtable;
 import java.util.Scanner;
