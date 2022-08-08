@@ -5,10 +5,13 @@ import java.util.Map;
 
 public class LongestSubstring {
     public static void main(String[] args){
-//        String s = "pwwekwb";
+
+        //String s = "pwwekwb";
         String s = "dvdf";
-//        String s = "abcd";
+        //String s = "abcd";
+
         int n = s.length(), longestSubstringLength = 0;
+
         Map<Character, Integer> charPositionMap = new HashMap<>(); // current index of character
         // try to extend the range [i, j]
         for (int currentCharLocation = 0, startCharLocation = 0; currentCharLocation < n; currentCharLocation++) {
