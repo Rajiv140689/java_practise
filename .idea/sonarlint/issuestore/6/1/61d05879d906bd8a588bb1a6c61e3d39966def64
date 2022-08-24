@@ -1,0 +1,13 @@
+
+r	java:S127"XRefactor the code in order to not assign to this loop counter from within the loop body.(‰Öïžúÿÿÿÿ
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ùˆß„ýÿÿÿÿ
+O
+java:S1659"4Declare "longestSubstringLength" on a separate line.(šé½›üÿÿÿÿ
+[
+java:S1659"EDeclare "endIndex" and all following declarations on a separate line.(Äë†÷
+]	java:S125
+"<This block of commented-out lines of code should be removed.(•Ï¡Óûÿÿÿÿ8çâÚÜª0
+]	java:S125
+"<This block of commented-out lines of code should be removed.(•Ï¡Óûÿÿÿÿ8èâÚÜª0
+S	java:S106#"9Replace this use of System.out or System.err by a logger.(½†¤¸ùÿÿÿÿ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(ýË¶±

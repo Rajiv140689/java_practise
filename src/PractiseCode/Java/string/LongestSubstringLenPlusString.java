@@ -6,8 +6,8 @@ import java.util.Map;
 public class LongestSubstringLenPlusString {
     public static void main(String[] args){
 
-//        String s = "pwwekwbcd";
-        String s = "dvdf";
+        String s = "pwwekwbcd";
+//        String s = "dvdf";
 //        String s = "abcd";
 
         int n = s.length(), longestSubstringLength = 0;
