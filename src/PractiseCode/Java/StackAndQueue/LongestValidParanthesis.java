@@ -39,7 +39,7 @@ public class LongestValidParanthesis {
                 }
                 else{
                     //Store the index for invalid paranthesis <single ')'>
-                    storeOpeningAndInvalidParanthesisIndex.add(i);
+                    storeOpeningAndInvalidParanthesisIndex.push(i);
                 }
             }
         }
