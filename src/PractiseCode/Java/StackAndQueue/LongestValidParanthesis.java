@@ -25,12 +25,12 @@ public class LongestValidParanthesis {
         // at 5 storeOpeningAndInvalidParanthesisIndex = [-1]
         // at 6 storeOpeningAndInvalidParanthesisIndex = [-1, 6] and so on
 
-        storeOpeningAndInvalidParanthesisIndex.add(-1);
+        storeOpeningAndInvalidParanthesisIndex.push(-1);
         int maxValidParanthesisLength = 0;
 
         for(int i = 0; i < input.length(); i++){
             if(input.charAt(i) == '(') {
-                storeOpeningAndInvalidParanthesisIndex.add(i);
+                storeOpeningAndInvalidParanthesisIndex.push(i);
             }
             else if (!storeOpeningAndInvalidParanthesisIndex.isEmpty() && input.charAt(i)  == ')'){
                 if(storeOpeningAndInvalidParanthesisIndex.peek() != -1 && input.charAt(storeOpeningAndInvalidParanthesisIndex.peek()) == '('){
